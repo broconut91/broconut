@@ -16,6 +16,67 @@
       line-height: 1.8;
       color: #818181;
   }
+
+*, *:before, *:after {
+ box-sizing: ; 
+}
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container2 {
+  padding: 0 16px;
+}
+
+.container2::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button-espacios {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px 0px 8px 0px;
+  color: white;
+  background-color: #007BFF;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button-espacios:hover {
+  background-color: #0062cc;
+}
+.btn.btn-custom-lg,
+.btn.btn-custom-sm,
+.btn.btn-custom-xs {
+  border-radius: 0;
+  border-color: #007BFF;
+  background-color: #007BFF;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border-radius: 0;
+  font-family: Montserrat, sans-serif;
+  color: white;
+}
+.btn.btn-custom-lg:hover {
+  background-color: #0062cc;
+}
+.btn.btn-custom-sm:hover {
+  background-color: #0062cc;
+}
+.btn.btn-custom-xs:hover {
+  background-color: #0062cc;
+}
+
   h2 {
       font-size: 24px;
       text-transform: uppercase;
@@ -224,94 +285,6 @@
         font-size: 150px;
     }
 
-/**************************
-  DEFAULT BOOTSTRAP STYLES
-**************************/
-
-.btn {
-  display: inline-block;
-  padding: 6px 12px;
-  margin-bottom: 0;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 1.42857143;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  background-image: none;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  padding: 10px 16px;
-}
-  
-.btn-lg {
-  font-size: 18px;
-  line-height: 1.33;
-  border-radius: 6px;
-}
-
-.btn-primary {
-  color: #fff;
-  background-color: #428bca;
-  border-color: #357ebd;
-}
-
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary:active,
-.btn-primary.active,
-.open .dropdown-toggle.btn-primary {
-  color: #fff;
-  background-color: #3276b1;
-  border-color: #285e8e;
-}
-
-/***********************
-  RAISED BUTTONS
-************************/
-.btn-primary.raised {
-    box-shadow: 0 3px 0 0 #007299;
-}
-.btn-primary.raised:active, .btn-primary.raised.active {
-    background: #33a6cc;
-    box-shadow: none;
-    margin-bottom: -3px;
-    margin-top: 3px;
-}
-
-/***********************
-  CUSTON BTN VALUES
-************************/
-
-.btn {
-    padding: 14px 24px;
-    border: 0 none;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
-.btn:focus, .btn:active:focus, .btn.active:focus {
-    outline: 0 none;
-}
-
-.btn-primary {
-    background: #0099cc;
-    color: #ffffff;
-}
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
-    background: #33a6cc;
-}
-.btn-primary:active, .btn-primary.active {
-    background: #007299;
-    box-shadow: none;
-}
-
-
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -328,10 +301,11 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#pricing">ESPACIOS</a></li>
-        <li><a href="#about">NOSOTROS</a></li>
-        <li><a href="#services">SERVICIOS</a></li>
-        <li><a href="#portfolio">NUESTROS CLIENTES</a></li>
+        <li><a href="#cafe">CAFÉS</a></li>
+        <li><a href="#coworking">COWORKING</a></li>
+        <li><a href="#eventos">EVENTOS</a></li>
+        <li><a href="#oficinas">OFICINAS</a></li>
+        <li><a href="#espacios creativos">ESPACIOS CREATIVOS</a></li>
         <li><a href="#contact">CONTACTO</a></li>
       </ul>
     </div>
@@ -339,111 +313,185 @@
 </nav>
 
 <!-- Container (Portfolio Section) -->
-<div id="portfolio" class="container-fluid text-center bg-grey">
-  <h2>Nuestros Clientes</h2><br>
+<div id="cafe" class="container-fluid text-center bg-grey">
+  <h2>Cafés</h2><br>
+  <h4>What we have created</h4>
+
+
+ <div class="row text-center ">
+    
+
+<div class="col-sm-3">
+    <div class="card">
+      <img src="img/testimonials-1.jpg" alt="Jane" style="width:100%">
+      <div class="container2">
+        <h2>Jane Doe</h2>
+        <p class="title">CEO Founder</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button-espacios">Ver Más</button></p>
+      </div>
+    </div>
+</div>
+
+<div class="col-sm-3">
+    <div class="card">
+      <img src="img/testimonials-1.jpg" alt="Jane" style="width:100%">
+      <div class="container2">
+        <h2>Jane Doe</h2>
+        <p class="title">CEO Founder</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button-espacios">Ver Más</button></p>
+      </div>
+    </div>
+</div>
+ <div class="col-sm-3">
+    <div class="card">
+      <img src="img/testimonials-1.jpg" alt="Jane" style="width:100%">
+      <div class="container2">
+        <h2>Jane Doe</h2>
+        <p class="title">CEO Founder</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button-espacios">Ver Más</button></p>
+      </div>
+    </div>
+</div>
+ <div class="col-sm-3">
+    <div class="card">
+      <img src="img/testimonials-1.jpg" alt="Jane" style="width:100%">
+      <div class="container2">
+        <h2>Jane Doe</h2>
+        <p class="title">CEO Founder</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button-espacios">Ver Más</button></p>
+      </div>
+    </div>
+</div>
+  </div>
+  
+
+  </div>
+
+
+<div id="coworking" class="container-fluid text-center bg-grey">
+  <h2>Coworking</h2><br>
   <h4>What we have created</h4>
 
 
  <div class="row text-center slideanim">
-    <div class="col-sm-3">
-      <div class="thumbnail">
-        <img src="img/testimonials-1.jpg" alt="Paris" width="400" height="300">
-        <p><strong>Paris</strong></p>
-        <p>Yes, we built Paris</p>
+<div class="col-sm-3">
+    <div class="card">
+      <img src="img/testimonials-1.jpg" alt="Jane" style="width:100%">
+      <div class="container2">
+        <h2>Jane Doe</h2>
+        <p class="title">CEO Founder</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button-espacios">Ver Más</button></p>
       </div>
     </div>
-    <div class="col-sm-3">
-      <div class="thumbnail">
-        <img src="img/testimonials-1.jpg" alt="New York" width="400" height="300">
-        <p><strong>New York</strong></p>
-        <p>We built New York</p>
+</div>
+
+<div class="col-sm-3">
+    <div class="card">
+      <img src="img/testimonials-1.jpg" alt="Jane" style="width:100%">
+      <div class="container2">
+        <h2>Jane Doe</h2>
+        <p class="title">CEO Founder</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button-espacios">Ver Más</button></p>
       </div>
     </div>
-    <div class="col-sm-3">
-      <div class="thumbnail">
-        <img src="img/testimonials-1.jpg" alt="San Francisco" width="400" height="300">
-        <p><strong>San Francisco</strong></p>
-        <p>Yes, San Fran is ours</p>
+</div>
+ <div class="col-sm-3">
+    <div class="card">
+      <img src="img/testimonials-1.jpg" alt="Jane" style="width:100%">
+      <div class="container2">
+        <h2>Jane Doe</h2>
+        <p class="title">CEO Founder</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button-espacios">Ver Más</button></p>
       </div>
     </div>
-         <div class="col-sm-3">
-      <div class="thumbnail">
-        <img src="img/testimonials-1.jpg" alt="San Francisco" width="400" height="300">
-        <p><strong>San Francisco</strong></p>
-        <p>Yes, San Fran is ours</p>
+</div>
+ <div class="col-sm-3">
+    <div class="card">
+      <img src="img/testimonials-1.jpg" alt="Jane" style="width:100%">
+      <div class="container2">
+        <h2>Jane Doe</h2>
+        <p class="title">CEO Founder</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button-espacios">Ver Más</button></p>
       </div>
     </div>
+</div>
   </div>
-  
+ 
+
+
+<div id="eventos" class="container-fluid text-center bg-grey">
+  <h2>eventos</h2><br>
+  <h4>What we have created</h4>
 
 
   <div class="row text-center slideanim">
-    <div class="col-sm-3">
-      <div class="thumbnail">
-        <img src="img/testimonials-1.jpg" alt="Paris" width="400" height="300">
-        <p><strong>Paris</strong></p>
-        <p>Yes, we built Paris</p>
+<div class="col-sm-3">
+    <div class="card">
+      <img src="img/testimonials-1.jpg" alt="Jane" style="width:100%">
+      <div class="container2">
+        <h2>Jane Doe</h2>
+        <p class="title">CEO Founder</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button-espacios">Ver Más</button></p>
       </div>
     </div>
-    <div class="col-sm-3">
-      <div class="thumbnail">
-        <img src="img/testimonials-1.jpg" alt="New York" width="400" height="300">
-        <p><strong>New York</strong></p>
-        <p>We built New York</p>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <div class="thumbnail">
-        <img src="img/testimonials-1.jpg" alt="San Francisco" width="400" height="300">
-        <p><strong>San Francisco</strong></p>
-        <p>Yes, San Fran is ours</p>
-      </div>
-    </div>
-         <div class="col-sm-3">
-      <div class="thumbnail">
-        <img src="img/testimonials-1.jpg" alt="San Francisco" width="400" height="300">
-        <p><strong>San Francisco</strong></p>
-        <p>Yes, San Fran is ours</p>
-      </div>
-    </div>
-  </div>
-  
-  
-  <div class="row text-center slideanim">
-    <div class="col-sm-3">
-      <div class="thumbnail">
-        <img src="img/testimonials-1.jpg" alt="Paris" width="400" height="300">
-        <p><strong>Paris</strong></p>
-        <p>Yes, we built Paris</p>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <div class="thumbnail">
-        <img src="img/testimonials-1.jpg" alt="New York" width="400" height="300">
-        <p><strong>New York</strong></p>
-        <p>We built New York</p>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <div class="thumbnail">
-        <img src="img/testimonials-1.jpg" alt="San Francisco" width="400" height="300">
-        <p><strong>San Francisco</strong></p>
-        <p>Yes, San Fran is ours</p>
-      </div>
-    </div>
-         <div class="col-sm-3">
-      <div class="thumbnail">
-        <img src="img/testimonials-1.jpg" alt="San Francisco" width="400" height="300">
-        <p><strong>San Francisco</strong></p>
-        <p>Yes, San Fran is ours</p>
-      </div>
-    </div>
-  </div>
-  
-  </div>
+</div>
 
-  
-  
+<div class="col-sm-3">
+    <div class="card">
+      <img src="img/testimonials-1.jpg" alt="Jane" style="width:100%">
+      <div class="container2">
+        <h2>Jane Doe</h2>
+        <p class="title">CEO Founder</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button-espacios">Ver Más</button></p>
+      </div>
+    </div>
+</div>
+ <div class="col-sm-3">
+    <div class="card">
+      <img src="img/testimonials-1.jpg" alt="Jane" style="width:100%">
+      <div class="container2">
+        <h2>Jane Doe</h2>
+        <p class="title">CEO Founder</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button-espacios">Ver Más</button></p>
+      </div>
+    </div>
+</div>
+ <div class="col-sm-3">
+    <div class="card">
+      <img src="img/testimonials-1.jpg" alt="Jane" style="width:100%">
+      <div class="container2">
+        <h2>Jane Doe</h2>
+        <p class="title">CEO Founder</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button-espacios">Ver Más</button></p>
+      </div>
+    </div>
+</div>
+</div>  
+</div>
 </div>
 
 
@@ -481,7 +529,10 @@
       <textarea class="form-control" id="Comentarios" name="Comentarios" placeholder="Comentarios" rows="4" ></textarea><br>
       <div class="row">
         <div class="col-sm-12 form-group">
-          <button class="btn btn-default pull-right" type="submit">Send</button>
+          <button class="btn btn-default btn-sm btn-custom-sm pull-right" type="submit">
+            <span class="glyphicon glyphicon-send"></span>
+              Enviar
+          </button>
         </div>
       </div>
     </div>
@@ -508,6 +559,7 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 <footer class="container-fluid text-center">
   <a href="#myPage" title="To Top">
     <span class="glyphicon glyphicon-chevron-up"></span>
+
   </a>
   <p>Footer</a></p>
 </footer>

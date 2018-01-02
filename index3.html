@@ -565,31 +565,39 @@
     </div>
     <div class="col-sm-5 slideanim">
       <div class="row">
-         <form id="gform" method="POST" 
+<form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="lautaro.u9125@gmail.com"
   action="https://script.google.com/macros/s/AKfycbzkvF-HR_8WV90v4Rwg3GTuqdyLm2uGLq49EellT2tFtEAg2LZc/exec">
+
+
         <div class="col-sm-12 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Nombre" type="text" required pattern="[A-Za-z]{1,100}" title="Los datos no son válidos, solo se permiten caracteres de la A a la Z">
+          <input class="form-control" id="nombre" name="nombre" placeholder="Nombre" type="text" required pattern="[A-Za-z]{1,100}" title="Solo se admiten caracteres de la A a la Z">
         </div>
-<!--        <div class="col-sm-12 form-group">
-          <input class="form-control" id="Apellido" name="Apellido" placeholder="Apellido" type="text" required pattern="[A-Za-z]{1,100}" title="Los datos no son válido,s solo se permiten caracteres de la A a la Z">
+      <div class="col-sm-12 form-group">
+          <input class="form-control" id="apellido" name="apellido" placeholder="Apellido" type="text" required pattern="[A-Za-z]{1,100}" title="Solo se admiten caracteres de la A a la Z">
         </div>
         <div class="col-sm-12 form-group">
-          <input class="form-control" id="Teléfono" name="Telefono" placeholder="Teléfono" type="text" required pattern="[0-9]{1,20}" title="Solo se admiten números">
+          <input class="form-control" id="telefono" name="telefono" placeholder="Teléfono" type="text" required pattern="[0-9]{1,20}" title="Solo se admiten números">
         </div>
 
         <div class="col-sm-12 form-group">
-          <input class="form-control" id="Telefono_Alternativo" name="Telefono_Alternativo" placeholder="Teléfono Alternativo" type="text" pattern="[0-9]{1,20}" title="Solo se admiten números">
+          <input class="form-control" id="telefono_alternativo" name="telefono_alternativo" placeholder="Teléfono Alternativo" type="text" pattern="[0-9]{1,20}" title="Solo se admiten números">
         </div>
--->
+
         <div class="col-sm-12 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" title="Ingrese una dirección de correo válida">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email"  title="Ingrese una dirección de correo válida">
+        </div>
+      <textarea class="form-control" id="mensaje" name="mensaje" placeholder="Comentarios" rows="4" ></textarea><br>
+      <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
         </div>
       </div>
-      <textarea class="form-control" id="message" name="message" placeholder="Comentarios" rows="4" ></textarea><br>
-      <div class="row">
-        <div class="col-sm-12 form-group">
-          <button class="btn btn-default pull-right" type="submit">Send</button>
+    
+
       </form>
+      <div style="display:none;" id="thankyou_message">
+    <h2><em>Thanks</em> for contacting us!
+      We will get back to you soon!</h2>
+  </div>
         </div>
       </div>
     </div>
@@ -656,6 +664,7 @@ $(document).ready(function(){
   });
 })
 </script>
-
+ <script data-cfasync="false" type="text/javascript"
+  src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
 </body>
 </html>
