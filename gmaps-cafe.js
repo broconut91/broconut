@@ -1,8 +1,8 @@
     var locations = [
-      ['Good Coffee <p>Descuento 35%</p>', -34.564625,-58.4565646, 4],
-      ['Origen Cafe - Descuento 10%', -34.620679,-58.3752348, 3],
-      ['Santal - Descuento 10%', -34.5652639,-58.4527318, 2],
-      ['La Panotteca - Descuento 15%', -34.5658051,-58.4656836, 1],
+      ['Good Coffee <p>Descuento 35%</p> <p>Ciudad de la Paz 1898</p>', -34.564625,-58.4565646, 4],
+      ['Origen Cafe<p>Descuento 10%</p> <p>Humberto Primo 599</p>', -34.620679,-58.3752348, 3],
+      ['Santal <p>Descuento 10%</p> <p> Virrey del Pino 2235</p>', -34.5652639,-58.4527318, 2],
+      ['La Panotteca <p>Descuento 15%</p> <p> Zapiola 2115</p>', -34.5658051,-58.4656836, 1],
        
     ];
 
