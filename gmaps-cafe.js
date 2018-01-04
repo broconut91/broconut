@@ -1,5 +1,5 @@
     var locations = [
-      ['Good Coffee - Descuento 35%', -34.564625,-58.4565646, 4],
+      ['Good Coffee \n Descuento 35%', -34.564625,-58.4565646, 4],
       ['Origen Cafe - Descuento 10%', -34.620679,-58.3752348, 3],
       ['Santal - Descuento 10%', -34.5652639,-58.4527318, 2],
       ['La Panotteca - Descuento 15%', -34.5658051,-58.4656836, 1],
