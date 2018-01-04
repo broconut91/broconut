@@ -1,5 +1,5 @@
     var locations = [
-      ['Good Coffee', -34.564625,-58.4565646, 4],
+      ['Good Coffee - Descuento 35%', -34.564625,-58.4565646, 4],
       ['Origen Cafe', -34.620679,-58.3752348, 3],
       ['Santal', -34.5652639,-58.4527318, 2],
       ['La Panotteca', -34.5658051,-58.4656836, 1],
@@ -8,7 +8,7 @@
 
 
     var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 8,
+      zoom: 13,
       center: new google.maps.LatLng(-34.586814,-58.428149),
       mapTypeId: google.maps.MapTypeId.ROADMAP
     });
