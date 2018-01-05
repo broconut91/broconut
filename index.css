@@ -106,7 +106,7 @@ body {
   .jumbotron {
       background-color: #F8F9FA;
       color: #fff;
-      padding: 200px 200px;
+      padding: 200px 0px;
       font-family: Montserrat, sans-serif;
       background-image: url(img/bg-masthead.jpg);
       background-position: 0% 25%;
@@ -262,6 +262,12 @@ body {
       text-align: center;
       margin: 25px 0;
     }
+
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
     .btn-lg {
         width: 100%;
         margin-bottom: 35px;
@@ -272,3 +278,17 @@ body {
         font-size: 150px;
     }
 
+@media(max-width: 1580px) {
+post-content {
+font-size: 18px;
+}
+
+@media(max-width: 980px) {
+post-content {
+font-size: 16px;
+}
+
+@media(max-width: 700px) {
+post-content {
+font-size: 14px;
+}
