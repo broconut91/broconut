@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Bootstrap Theme Company Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzUkHryiuByQl5EX2fn5H4LuobG8FWrwU&callback=myMap" type="text/javascript"></script>
+  <link rel="stylesheet" type="text/css" href="index.css">
+
+
+
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      
+	<a href="#myPage"><img src="img/logo2.png" width="140px"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#cafe">CAFÉS</a></li>
+        <li><a href="coworking.html">COWORKING</a></li>
+        <li><a href="#eventos">EVENTOS</a></li>
+        <li><a href="#oficinas">OFICINAS</a></li>
+        <li><a href="#espacios creativos">ESPACIOS CREATIVOS</a></li>
+        <li><a href="#contact">CONTACTO</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="map" style="height:600px;width:100%;">
+
+</div>
+<!-- Llama al script de gmaps -->
+
+<script type="text/javascript" src="gmaps-oficinas.js"></script>
+
+
+<!-- Container (Portfolio Section) -->
+<div id="cafe" class="container-fluid text-center">
+  <h2>Espacios en Oficinas</h2><br>
+  <!--<h4>What we have created</h4>-->
+
+
+ <div class="row text-center slideanim ">
+    
+
+   
+<div class="col-sm-3">
+    <div class="card">
+      <img src="paginas/img/landi.jpg" alt="PC3" style="width:100%">
+      <div class="container2">
+        <h2>Estudio Jurídico</h2>
+        <p class="title">Rivadavia y 9 de Julio, CABA</p>
+      	      
+	        <p>Oficina privada para 3 personas</p>
+		<p>Cuenta con sala de reuniones, posibilidad de alquilar por separado para reuniones o cursos</p>
+		<p>Servicios incluídos en la tarifa: Impresiones, Internet, Microondas, Heladera, llamadas </p>
+		<p>Si estas interesado/a comentá o envianos mensaje privado</p>
+       			 <p><button class="button-espacios">Ver Más</button></p>
+
+
+
+      </div>
+    </div>
+</div>
+
+<div class="col-sm-3">
+    <div class="card">
+      <img src="paginas/img/dragun.jpg" alt="Proximamente" style="width:100%">
+      <div class="container2">
+        <h2>Empresa distribuidora</h2>
+        <p class="title">Gascon y Av Córdoba</p>
+       			<p>Oficina privada para 3 personas dentro de empresa distribuidora de productos industriales</p>
+				<p>Horario de Lunes a Viernes de 9 a 18hs</p>
+				<p>Espacios comunes y gastos compartidos</p>
+				<p>Se pide $4000 por mes</p>
+				<p>Interesados contactarse</p>				
+        <p><button class="button-espacios">Ver Más</button></p>
+      </div>
+    </div>
+</div>
+ <div class="col-sm-3">
+    <div class="card">
+      <img src="paginas/img/ulanovski.jpg" alt="" style="width:100%">
+      <div class="container2">
+        <h2>Escritorio en consultora de Recursos Humanos</h2>
+        <p> <class="title">Virrey del Pino y Moldes</p>
+		<p>Horario de Lunes a Viernes de 9 a 18hs</p>
+		<p>Precio $40/hora</p>
+		<p>Incluye impresiones, llamadas, internet, espacio para una sola persona</p>
+        <p><button class="button-espacios">Ver Más</button></p>
+      </div>
+    </div>
+</div>
+ <div class="col-sm-3">
+    <div class="card">
+      <img src="paginas/img/zhar.jpg" alt="" style="width:100%">
+      <div class="container2">
+        <h2>Escritorio individual dentro de taller de diseño gráfico</h2>
+        <p class="title">Castro al 900, Boedo</p>
+          <p>Precio $2000/mes</p>
+		
+        <p><button class="button-espacios">Ver Más</button></p>
+      </div>
+    </div>
+</div>
+  </div>
+  
+
+  </div>
+</div>
+</div>
+
+
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACTO</h2>
+  <div class="row">
+    <div class="col-sm-5">
+         <p>Contactanos y responderemos en menos de 24hs.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Buenos Aires, Argentina</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +54 11 4764 1259</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> contacto@co-work.com.ar</p>
+      
+    </div>
+    <div class="col-sm-5 slideanim">
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <input class="form-control" id="Nombre" name="Nombre" placeholder="Nombre" type="text" required>
+        </div>
+        <div class="col-sm-12 form-group">
+          <input class="form-control" id="Apellido" name="Apellido" placeholder="Apellido" type="Apellido" required>
+        </div>
+        <div class="col-sm-12 form-group">
+          <input class="form-control" id="Teléfono" name="Teléfono" placeholder="Teléfono" type="Teléfono" required>
+        </div>
+
+        <div class="col-sm-12 form-group">
+          <input class="form-control" id="Teléfono Alternativo" name="Teléfono Alternativo" placeholder="Teléfono Alternativo" type="Teléfono Alternativo" required>
+        </div>
+
+        <div class="col-sm-12 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="mensaje" name="mensaje" placeholder="Comentarios" rows="4" ></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default btn-sm btn-custom-sm pull-right" type="submit">
+            <span class="glyphicon glyphicon-send"></span>
+              Enviar
+          </button>
+        </div>
+      </div>
+      <div style="display:none;" id="thankyou_message">
+        <h2><em>Gracias </em> por contactarnos!
+          Te responderemos a la brevedad</h2>
+          </div>
+    </div>
+  </div>
+</div>
+
+
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+
+  </a>
+  <p>Footer</a></p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, .jumbotron a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+      // Store hash
+      var hash = this.hash;
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>
+
