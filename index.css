@@ -11,18 +11,35 @@ body {
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  bottom: 20px;
+  right: 20px;
+
  
 
 }
 
 .container2 {
-  padding: 0 16px;
+ 
+   vertical-align: middle;
+   text-align: center;
+vertical-align: middle;
+
+}
+.container4 {
+
+   vertical-align: middle;
+    bottom: 10px;
+position:absolute;bottom:0;
+ padding: 0 16px;
+
 }
 
 .container2::after, .row::after {
   content: "";
   clear: both;
   display: table;
+
 
 
 }
@@ -47,6 +64,7 @@ body {
   text-align: center;
   cursor: pointer;
   width: 100%;
+
 }
 .button-espacios2 {
   border: none;
