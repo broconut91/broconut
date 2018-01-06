@@ -38,8 +38,22 @@ body {
   cursor: pointer;
   width: 100%;
 }
+.button-espacios2 {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px 0px 8px 0px;
+  color: white;
+  background-color: #007BFF;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
 
 .button-espacios:hover {
+  background-color: #0062cc;
+}
+.button-espacios2:hover {
   background-color: #0062cc;
 }
 .btn.btn-custom-lg,
@@ -278,17 +292,31 @@ body {
         font-size: 150px;
     }
 
-@media(max-width: 1580px) {
-post-content {
-font-size: 18px;
+a.button2{
+ display:inline-block;
+ padding:0.5em 3em;
+ border:0.16em solid #FFFFFF;
+ margin:0 0.3em 0.3em 0;
+ box-sizing: border-box;
+ text-decoration:none;
+ text-transform:uppercase;
+ font-family:'Roboto',sans-serif;
+ font-weight:400;
+ color:#FFFFFF;
+ text-align:center;
+ transition: all 0.15s;
 }
-
-@media(max-width: 980px) {
-post-content {
-font-size: 16px;
+a.button2:hover{
+ color:#DDDDDD;
+ border-color:#DDDDDD;
 }
-
-@media(max-width: 700px) {
-post-content {
-font-size: 14px;
+a.button2:active{
+ color:#BBBBBB;
+ border-color:#BBBBBB;
+}
+@media all and (max-width:30em){
+ a.button2{
+  display:block;
+  margin:0.4em auto;
+ }
 }
