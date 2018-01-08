@@ -1,6 +1,6 @@
  var locations = [
       
-      ['PC3 Coworking <p><b>Descuento 15%</b></p> <p> Rodríguez Peña 545</p>', -34.6026208,-58.3911502, 1],
+      ['PC3 Coworking <p><b>Descuento 5%</b></p> <p> Rodríguez Peña 545</p>', -34.6026208,-58.3911502, 1],
         
        
     ];
