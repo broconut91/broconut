@@ -3,6 +3,7 @@
 <head>
 
 <script src = "codegen.js"> </script>
+<script src = "qrcode.js"> </script>
 
 
 
@@ -15,8 +16,10 @@ Tu código de descuento es:
 <b>
 <script> 
 
-var x="nulo";
-x = rand_code(caracteres, longitud);
+//var x="nulo";
+//x = rand_code(caracteres, longitud);
+//document.write(x);
+ x = create_qrcode("3HFAS", 1, 'L', 0)
 document.write(x);
 
 </script>
