@@ -1,5 +1,6 @@
  var locations = [
       
+      ['Freedom Coworking <p><b>Sin descuento</b></p> <p>Avenida Santa Fé 2459</p>', -34.5945051,-58.4039819, 2],
       ['PC3 Coworking <p><b>Descuento 5%</b></p> <p> Rodríguez Peña 545</p>', -34.6026208,-58.3911502, 1],
         
        
