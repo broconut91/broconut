@@ -6,7 +6,11 @@
   <div id="form">
     <form id="book_tickets"  action="welcome.php" method="get">
       <fieldset>
-        <legend>Reserva en <?php echo $var; ?></legend>
+	      <?php
+		$var = $_GET['var'];
+		
+		?>
+        <legend>Reserva en <?php echo var; ?></legend>
 
         <p>
           <!-- <label for="movie_name">Movie</label> 
@@ -43,10 +47,7 @@
           <input type="email"  name="email" id="email" required />
         </p>
 	      
-	      <?php
-		$var = $_GET['var'];
-		echo $var
-		?>
+	      
 <!--
         <p>
           <label for="tickets_quantity"># Tickets</label>
