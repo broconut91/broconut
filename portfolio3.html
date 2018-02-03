@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	
+
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112156059-1"></script>
@@ -10,9 +10,10 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'UA-112156059-1');
-</script>	
-	
-	
+</script>
+
+
+
   <!-- Theme Made By www.w3schools.com - No Copyright -->
   <title>Bootstrap Theme Company Page</title>
   <meta charset="utf-8">
@@ -57,10 +58,13 @@
     </div>
   </div>
 </nav>
-
-<div id="map" style="height:600px;width:100%;">
+<br><br><br><br>
+<center>
+<div id="map" style="height:500px;width:70%;">
 
 </div>
+</center>
+
 <!-- Llama al script de gmaps -->
 
 <script type="text/javascript" src="gmaps-cafe.js"></script>
@@ -89,11 +93,17 @@
        
 			<p>Beneficios exclusivos de co-work.com.ar</p>
       <div class="container4" style=" width: 100%;">
-       			 <p><button class="button-espacios" id="goodcoffeeBtn">Ver Más</button> 
-              <button class="button-espacios" onclick = "openWin();">Generar Cupón</button></p>
+	  
+       			
+				 <p><button class="button-espacios" id="goodcoffeeBtn">Ver Más</button></p>
+              <button class="button-espacios" onclick = "openWin();clickLink();">Generar Cupón</button></p>
+			   <p><a href="book.html"><button class="btn btn-lg">Reservar</button></a> </p>
+			   <input type="button" onClick="window.location='book.html?var=GoodCoffee ?>'">Reservar2
+			  
+			  <!--<p>Clicks <span id="clicks">0</span></p>-->
       </div>
 
-
+		
 <!-- The Modal -->
 <div id="goodcoffee" class="modal ">
 
